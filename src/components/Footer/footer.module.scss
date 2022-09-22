@@ -1,0 +1,123 @@
+@import "../../styles/functions.scss";
+
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 pxToRem(109);
+    border-top: 1px solid #f5f7fa;
+    padding-top: pxToRem(71.08);
+    padding-bottom: pxToRem(68);
+    p {
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(24);
+      letter-spacing: -0.02em;
+    }
+
+    &__socials {
+      p {
+        color: #000429;
+        margin: pxToRem(16) 0 pxToRem(40);
+      }
+
+      &__logos {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: pxToRem(16);
+        }
+      }
+    }
+
+    &__contact {
+      h5 {
+        font-size: pxToEm(14);
+        font-weight: 400;
+        line-height: pxToRem(24);
+        letter-spacing: -0.02em;
+        color: #000429;
+        margin-bottom: pxToRem(8);
+      }
+
+      p {
+        color: #8a91a8;
+        margin-bottom: pxToRem(26);
+        max-width: pxToRem(166);
+      }
+
+      &__terms {
+        display: flex;
+        align-items: center;
+
+        &__item {
+          display: flex;
+          align-items: center;
+          margin-right: pxToRem(16);
+
+          p {
+            margin-bottom: 0;
+          }
+          svg {
+            margin-left: pxToRem(9);
+            path {
+              stroke: #8a91a8;
+            }
+          }
+        }
+      }
+    }
+
+    &__list {
+      h5 {
+        font-size: pxToEm(14);
+        font-weight: 600;
+        line-height: pxToRem(24);
+        letter-spacing: -0.02em;
+        color: #000429;
+        margin-bottom: pxToRem(24);
+      }
+
+      a {
+        color: #8a91a8;
+        margin-bottom: pxToRem(24);
+        text-decoration: none;
+        font-size: pxToEm(14);
+        font-weight: 400;
+        line-height: pxToRem(24);
+        letter-spacing: -0.02em;
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin: 0 pxToRem(80) pxToRem(30);
+    padding-top: pxToRem(61);
+    border-top: 1px solid #f5f7fa;
+    p {
+      margin-left: pxToRem(24);
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(28);
+      letter-spacing: -0.02em;
+      width: 97%;
+      color: #8a91a8;
+    }
+  }
+
+  &__footnote {
+    font-size: pxToEm(14);
+    font-weight: 400;
+    line-height: pxToRem(28);
+    letter-spacing: -0.02em;
+    color: #8a91a8;
+    margin: 0 pxToRem(80) pxToRem(106);
+  }
+}

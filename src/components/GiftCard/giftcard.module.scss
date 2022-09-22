@@ -1,0 +1,109 @@
+@import "../../styles/functions.scss";
+
+.giftcard {
+  background: #f5f7fa;
+  padding: 16px;
+  margin-left: 16px;
+
+  &:nth-child(-n + 3) {
+    border-radius: 12px 12px 0 0;
+    padding-bottom: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    border-radius: 0 0 12px 12px;
+  }
+
+  &:nth-child(n + 7) {
+    padding-top: 0;
+  }
+
+  &__body {
+    height: pxToRem(308);
+    width: pxToRem(307);
+    border-radius: pxToRem(8);
+    padding: pxToRem(19) pxToRem(22);
+    border: 2px solid #ebeff5;
+    background: #ffffff;
+
+    &__tag {
+      height: pxToRem(34);
+      width: pxToRem(84);
+      border-radius: pxToRem(999);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      margin-bottom: pxToRem(23.61);
+      p {
+        font-size: pxToEm(14);
+        font-weight: 600;
+        line-height: pxToRem(18);
+        letter-spacing: -0.02em;
+        color: #6f6f80;
+      }
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: pxToRem(15.79);
+      svg {
+        height: pxToRem(26);
+        width: pxToRem(35);
+        margin-right: pxToRem(10.98);
+      }
+
+      h5 {
+        font-size: pxToEm(16);
+        font-weight: 600;
+        line-height: pxToRem(19);
+        letter-spacing: -0.02em;
+        color: #000429;
+      }
+    }
+
+    &__sub {
+      font-size: pxToEm(12);
+      font-weight: 400;
+      line-height: pxToRem(20);
+      letter-spacing: -0.02em;
+      color: #8a91a8;
+      margin-bottom: pxToRem(33.65);
+    }
+
+    &__notif {
+      display: flex;
+      align-items: center;
+      margin-bottom: pxToRem(24);
+      p {
+        font-size: pxToEm(12);
+        font-weight: 400;
+        line-height: pxToRem(14);
+        letter-spacing: -0.02em;
+        margin-left: pxToRem(14);
+        color: #8a91a8;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: pxToRem(40);
+      border-radius: pxToRem(4);
+      background: #0069e0;
+      border: 1px solid #f5f7fa;
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(17);
+      letter-spacing: -0.02em;
+      color: #ffffff;
+
+      svg {
+        margin-left: pxToRem(16);
+        path {
+          stroke: #ffffff;
+        }
+      }
+    }
+  }
+}

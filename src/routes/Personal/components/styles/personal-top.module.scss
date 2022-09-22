@@ -1,0 +1,71 @@
+@import "../../../../styles/functions.scss";
+
+.top {
+  margin-top: pxToRem(96);
+  padding: pxToRem(25) pxToRem(40);
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    h3 {
+      width: pxToRem(601);
+      font-size: pxToEm(64);
+      font-weight: 700;
+      line-height: pxToRem(77);
+      letter-spacing: -0.02em;
+      margin-bottom: pxToRem(32);
+    }
+
+    p {
+      font-size: pxToEm(14);
+      font-weight: 600;
+      line-height: pxToRem(20);
+      letter-spacing: -0.02em;
+      width: pxToRem(323);
+      margin-bottom: pxToRem(48);
+    }
+
+    button {
+      background: #0069e0;
+      font-size: pxToEm(14);
+      font-weight: 600;
+      line-height: pxTorem(17);
+      letter-spacing: -0.02em;
+      background: #ffffff;
+      box-shadow: 4px 4px 0px 0px #5ca5ff;
+      height: pxToRem(49);
+      width: pxToRem(168);
+      border-radius: pxToRem(4);
+    }
+
+    &__leftslash {
+      position: absolute;
+      top: 1%;
+      left: 1%;
+    }
+    &__rightslash {
+      position: absolute;
+      top: 1%;
+      right: 1%;
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__credit {
+    position: absolute;
+    right: 0;
+    bottom: pxToRem(24);
+  }
+  &__amazon {
+    position: absolute;
+    left: 0;
+    bottom: pxToRem(24);
+  }
+}

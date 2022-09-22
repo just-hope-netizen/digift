@@ -1,0 +1,81 @@
+@import "../../../../styles/functions.scss";
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: pxToRem(220)  pxToRem(90) pxToRem(91);
+
+  &__left {
+    &__title {
+      padding-top: pxToRem(20);
+      h3 {
+        font-size: pxToEm(56);
+        font-weight: 700;
+        line-height: pxToRem(67);
+        letter-spacing: -0.03em;
+        color: #000429;
+        span {
+          color: #0078ff;
+        }
+      }
+    }
+
+    p {
+      font-size: pxToEm(14);
+      font-weight: 600;
+      line-height: pxToRem(20);
+      letter-spacing: -0.02em;
+      color: #8a91a8;
+      margin: pxToRem(24) 0;
+      width: pxToRem(409);
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      padding-bottom: pxToRem(20);
+
+      &__start {
+        height: pxToRem(48);
+        width: pxToRem(150);
+        border-radius: pxToRem(4);
+        background: #0078ff;
+        color: #ffffff;
+        margin-right: pxToRem(20);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        svg {
+          margin-left: pxToRem(16);
+        }
+      }
+
+      &__sign {
+        height: pxToRem(48);
+        width: pxToRem(150);
+        border-radius: pxToRem(4);
+        border: 1px solid #f5f7fa;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: #8a91a8;
+
+
+        svg {
+          margin-left: pxToRem(16);
+          path {
+            stroke: #8a91a8;
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    max-height: pxToRem(407);
+    max-width: pxToRem(577);
+    border-radius: pxToRem(4);
+    align-self: stretch;
+  }
+}

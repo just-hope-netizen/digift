@@ -1,0 +1,61 @@
+@import "../../styles/functions.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  padding: pxToRem(14.5) pxToRem(45);
+  box-shadow: 0px 1px 0px 0px #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  &__links {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(17);
+      letter-spacing: -0.02em;
+      color: #8a91a8;
+      text-decoration: none;
+      margin-right: pxToRem(32);
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: pxToRem(16);
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    &__login {
+      margin: 0 pxToRem(28) 0 pxToRem(60);
+      font-size: pxToEm(14);
+      font-weight: 400;
+      line-height: pxToRem(17);
+      letter-spacing: -0.02em;
+      color: #8a91a8;
+      border-left: 1px solid #f5f7fa;
+    }
+
+    &__started {
+      height: pxToRem(48);
+      width: pxToRem(138);
+      border-radius: pxToRem(4);
+      background: #0078ff;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-left: pxToRem(18);
+      }
+    }
+  }
+}

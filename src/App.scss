@@ -1,0 +1,17 @@
+$font-stack: Garant;
+$secondary-color: #fc0; 
+
+//logo 
+.logo{
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  background: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 0;
+  h5{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+}

@@ -1,0 +1,42 @@
+@import "../../styles/functions.scss";
+
+.featureCard {
+  background: rgba(194, 221, 255);
+  height: pxToRem(628);
+  width: 100%;
+  border-radius: pxToRem(10);
+  padding: pxToRem(72) pxToRem(64);
+  position: relative;
+
+ &:nth-of-type(1){
+    margin-right: 16px;
+  }
+
+ &:nth-of-type(2){
+    margin-left: 16px;
+  }
+  p {
+    max-width: pxToRem(407);
+    font-size: pxToEm(48);
+    font-weight: 700;
+    line-height: pxToRem(58);
+    letter-spacing: -0.03em;
+    word-wrap: break-word;
+    margin-bottom: pxToRem(20);
+    &:nth-of-type(2){
+       font-size: 16px;
+       line-height: pxToEm(24);
+     }
+    
+    span {
+      color: #0078ff;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: pxToRem(285);
+    width: 92%;
+  }
+}

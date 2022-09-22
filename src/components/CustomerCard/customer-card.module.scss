@@ -1,0 +1,61 @@
+@import "../../styles/functions.scss";
+
+
+  .customer {
+    height: pxToRem(410);
+    width: pxToRem(411);
+  border-radius: pxToRem(8);
+  padding: pxToRem(28) pxToRem(40);
+  border: 2px solid #ebeff5;
+  text-align: left;
+  margin: auto;
+
+  &__comment {
+    font-size: pxToEm(16);
+    font-weight: 400;
+    line-height: pxToRem(32);
+    letter-spacing: -0.02em;
+    color: #8a91a8;
+    height: pxToRem(224);
+    margin-bottom: pxToRem(72);
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      height: pxToRem(48);
+      width: pxToRem(48);
+      border-radius: 50%;
+      background: #ebf4ff;
+      position: relative;
+      svg {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+      }
+    }
+
+    &__names {
+      margin-left: pxToRem(16);
+
+      h5 {
+        font-size: pxToEm(16);
+        font-weight: 700;
+        line-height: pxToRem(19);
+        letter-spacing: -0.02em;
+        color: #000429;
+      }
+      
+      p {
+        font-size: pxToEm(14);
+        font-weight: 400;
+        line-height: pxToRem(17);
+        letter-spacing: -0.02em;
+        color: #68718d;
+        margin-top: pxToRem(4);
+      }
+    }
+  }
+}

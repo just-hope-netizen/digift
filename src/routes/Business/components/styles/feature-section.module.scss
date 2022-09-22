@@ -1,0 +1,9 @@
+@import "../../../../styles/functions.scss";
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  padding: pxToRem(70) pxToRem(64);
+
+ 
+}

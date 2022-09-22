@@ -1,0 +1,79 @@
+@import "../../../../styles/functions.scss";
+
+.api {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  pxToRem(83)  0 pxToRem(83) ;
+
+&__div{
+  margin-right: pxToRem(16);
+}
+&__img{
+  margin-left: pxToRem(16);
+}
+  h3 {
+    font-size: pxToEm(56);
+    font-weight: 700;
+    line-height: pxToRem(67);
+    letter-spacing: -0.03em;
+    width: pxToRem(492);
+
+    span {
+      color: #0078ff;
+    }
+  }
+
+  p {
+    margin: pxToRem(24) 0;
+    color: #8a91a8;
+    font-size: pxToEm(14);
+    font-weight: 600;
+    line-height: pxToRem(20);
+    letter-spacing: -0.02em;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    &__start {
+      height: pxToRem(48);
+      width: pxToRem(150);
+      border-radius: pxToRem(4);
+      background: #0078ff;
+      color: #ffffff;
+      margin-right: pxToRem(20);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      svg {
+        margin-left: pxToRem(16);
+      }
+    }
+
+    &__sign {
+      height: pxToRem(48);
+      width: pxToRem(150);
+      border-radius: pxToRem(4);
+      border: 1px solid #f5f7fa;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      color: #8a91a8;
+
+      svg {
+        margin-left: pxToRem(16);
+        path {
+          stroke: #8a91a8;
+        }
+      }
+    }
+  }
+
+  img {
+    height: pxToRem(462);
+    width: pxToRem(480);
+    border-radius: pxToRem(7.24);
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/functions.scss";
+
+.switch {
+  display: flex;
+  height: pxToRem(42);
+  width: pxToRem(102);
+  border-radius: pxToRem(999);
+  background: #f3f4f7;
+  justify-content: space-between;
+  align-items: center;
+  padding: pxToRem(3);
+
+  &__item {
+    height: pxToRem(36);
+    width: pxToRem(50);
+    border-radius: pxToRem(999);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__active {
+    background: #ffffff;
+  }
+}
