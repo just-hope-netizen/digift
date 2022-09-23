@@ -18,10 +18,10 @@ const Navbar = () => {
       <Menu onClick={toggleMenu} className={styles.menu}/>
       <div className={`${styles.links__wrapper } ${menu && styles.links__wrapper__active}`}>
         <div className={styles.nav__links}>
-          <Link to='/'>
+          <Link to='/' onClick={toggleMenu}>
             Personal <Chevron />
           </Link>
-          <Link to='/business'>
+          <Link to='/business' onClick={toggleMenu}>
             Business <Chevron />
           </Link>
           <SearchBar />
