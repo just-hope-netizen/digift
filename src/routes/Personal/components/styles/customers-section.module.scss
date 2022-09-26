@@ -15,5 +15,11 @@
 &__wrapper{
   background-color: aquamarine;
 }
+@media (max-width: 1250px) {
+  h3{
+    width: 100%;
+    font-size: pxToEm(40);
+  }
+}
 
 }

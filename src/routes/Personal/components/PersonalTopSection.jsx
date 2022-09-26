@@ -1,4 +1,4 @@
-import { CreditCard, AmazonCard, LightningIcon } from "../../../assets/svgs";
+import { CreditCard, AmazonCard, LightningIcon } from "../../../assets/svg";
 import RectBg from "../../../components/RectBg";
 import styles from "./styles/personal-top.module.scss";
 

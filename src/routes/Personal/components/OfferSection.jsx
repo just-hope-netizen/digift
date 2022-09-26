@@ -1,5 +1,5 @@
 import RectangleImg from "../../../assets/images/Rectangle.png";
-import { LightningIcon } from "../../../assets/svgs";
+import { LightningIcon } from "../../../assets/svg";
 import styles from "./styles/offer-section.module.scss";
 
 const OfferSection = () => {

@@ -1,25 +1,33 @@
-import { useState } from "react";
-import GiftCard from "../../../components/GiftCard";
-import Checkbox from "../../../components/Checkbox";
-import { ArrowRightIcon } from "../../../assets/svgs";
-import styles from "./styles/arrivals-section.module.scss";
+import { useState } from 'react';
+import GiftCard from '../../../components/GiftCard';
+import Checkbox from '../../../components/Checkbox';
+import {
+  ArrowDownIcon,
+  ArrowRightIcon,
+  ArrowUpIcon,
+} from '../../../assets/svg';
+import styles from './styles/arrivals-section.module.scss';
 
 const filters = [
-  "Ecommerce",
-  "Popular",
-  "Airtime & Electricity",
-  "Gaming",
-  "Electronics",
-  "Clothes and Fashion",
-  "Jewelry & Watches",
-  "Home and furnitures",
-  "Sports & Entertainment",
+  'Ecommerce',
+  'Popular',
+  'Airtime & Electricity',
+  'Gaming',
+  'Electronics',
+  'Clothes and Fashion',
+  'Jewelry & Watches',
+  'Home and furnitures',
+  'Sports & Entertainment',
 ];
 
 const ArrivalsSection = () => {
   const [show, setShow] = useState(6);
+  const [dropdown, setDropdown] = useState();
   const data = Array(show).fill(1);
-  
+  const toggleIcon = () => {
+    setDropdown(!dropdown);
+  };
+
   return (
     <section className={styles.arrivals}>
       <h3>Latest Arrivals</h3>
@@ -32,11 +40,21 @@ const ArrivalsSection = () => {
             </div>
 
             <div className={styles.arrivals__content__filter__categories}>
-              <h5>Categories</h5>
+              <h5>
+                Categories
+                <span>
+                  {dropdown ? (
+                    <ArrowUpIcon onClick={toggleIcon} />
+                  ) : (
+                    <ArrowDownIcon onClick={toggleIcon} />
+                  )}
+                </span>
+              </h5>
               {filters.map((item, index) => (
                 <div
                   key={index}
-                  className={styles.arrivals__content__filter__categories__item}
+                  className={`${styles.arrivals__content__filter__categories__item}
+                  ${dropdown && styles.active}`}
                 >
                   <Checkbox />
                   <p>{item}</p>
@@ -47,7 +65,7 @@ const ArrivalsSection = () => {
 
           <div className={styles.arrivals__content__cards}>
             {data.map((item, index) => (
-              <GiftCard key= {index} />
+              <GiftCard key={index} />
             ))}
           </div>
         </div>

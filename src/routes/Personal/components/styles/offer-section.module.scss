@@ -28,4 +28,14 @@
       width: pxToRem(600);
     }
   }
+  @media (max-width: 968px) {
+    &__content{
+      h4{
+        width: 100%;
+        font-size: pxToEm(34);
+        line-height: pxToRem(67);
+
+      }
+    }
+  }
 }
