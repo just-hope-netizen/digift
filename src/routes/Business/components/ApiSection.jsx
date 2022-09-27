@@ -1,5 +1,5 @@
 import ApiImage from "../../../assets/images/api.png";
-import { ArrowRightIcon } from "../../../assets/svgs";
+import { ArrowRightIcon } from "../../../assets/svg";
 import RotatingText from "../../../components/RotatingText";
 import styles from "./styles/api-section.module.scss";
 

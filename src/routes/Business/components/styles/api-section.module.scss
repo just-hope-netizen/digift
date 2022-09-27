@@ -1,24 +1,24 @@
-@import "../../../../styles/functions.scss";
+@import '../../../../styles/functions.scss';
 
 .api {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:  pxToRem(83)  0 pxToRem(83) ;
+  padding: pxToRem(83) 0 pxToRem(83);
 
-&__div{
-  margin-right: pxToRem(16);
-}
-&__img{
-  margin-left: pxToRem(16);
-}
+  &__div {
+    margin-right: pxToRem(16);
+  }
+  &__img {
+    margin-left: pxToRem(16);
+  }
   h3 {
     font-size: pxToEm(56);
     font-weight: 700;
     line-height: pxToRem(67);
     letter-spacing: -0.03em;
-    width: pxToRem(492);
-
+    max-width: pxToRem(492);
+    width: 100%;
     span {
       color: #0078ff;
     }
@@ -73,7 +73,43 @@
 
   img {
     height: pxToRem(462);
-    width: pxToRem(480);
+    max-width: pxToRem(480);
+    width: 100%;
     border-radius: pxToRem(7.24);
   }
+
+  @media (max-width: 1250px) {
+    padding: 0 pxToRem(20);
+    &__div {
+      text-align: center;
+    }
+    &__btns {
+      justify-content: center;
+    }
+    h3 {
+      font-size: pxToEm(30);
+      line-height: pxToRem(47);
+    }
+    img {
+      display: none;
+    }
+  }
+  @media (max-width: 425px) {
+    padding: pxToRem(40) 0;
+    &__div {
+      margin: 0;
+    }
+  }
+  @media (max-width: 375px) {
+    &__btns {
+      flex-direction: column;
+      &__start{
+                 margin: 0 0 pxToRem(10);
+
+      }
+    }
+
+
+  }
+
 }

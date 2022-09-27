@@ -1,0 +1,50 @@
+@import "../../styles/functions.scss";
+.icons{
+    display: none;
+    svg{
+        height: pxToRem(26);
+        path{
+            stroke: #0078ff;
+        }
+    }
+}
+
+.searchBar{
+    display: flex ;
+    position: absolute;
+    top: pxToRem(10);
+    right: pxToRem(100);
+}
+
+.menu__btn{
+     svg{
+      height: pxToRem(26);
+      color: #0078ff;
+    }
+}
+
+@media (max-width: 560px) {
+    .icons{
+        display: block;
+        margin-right: pxToRem(15);
+        &__close{
+            position: absolute;
+            top: pxToRem(70);
+            right: pxToRem(-360);
+            transition: right 1s;
+        }
+        &__close__active{
+
+            right:  calc( (100% - 260px) / 2)  ;
+            z-index: 1;
+        }
+    }
+    .searchBar{
+        top: pxToRem(60);
+        right: pxToRem(-360);
+        transition: right 1s;
+    }
+    .searchBar__active{
+        right:  calc( (100% - 300px) / 2)  ;
+    }
+}

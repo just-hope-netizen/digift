@@ -1,5 +1,4 @@
-import { PlusStarIcon } from "../../../assets/svgs";
-import { DiskIcon } from "../../../assets/svgs";
+import { PlusStarIcon, DiskIcon } from "../../../assets/svg";
 import RectBg from "../../../components/RectBg";
 import styles from "./styles/create-section.module.scss";
 

@@ -1,4 +1,4 @@
-import { Avatar } from "../../assets/svgs";
+import { Avatar } from "../../assets/svg";
 import styles from "./customer-card.module.scss";
 
 const CustomerCard = ({ comment }) => {

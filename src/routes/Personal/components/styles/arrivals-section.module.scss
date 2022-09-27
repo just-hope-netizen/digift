@@ -17,6 +17,8 @@
     display: flex;
     margin-top: pxToRem(48);
     justify-content: center;
+    border-radius: pxToRem(8);
+
     &__filter {
       height: pxToRem(663);
       min-width: calc( pxToRem(242.75 - 32 - 12 - 5));
@@ -113,13 +115,6 @@
     margin: pxToRem(54) 0 0 55%;
   }
   
-  @media (max-width: 1000px) {
-    &__content{
-      &__cards{
-       grid-template-columns: auto;
-      }
-    }
-  }
   @media (max-width: 1250px) {
     &__content {
       flex-direction: column;
@@ -153,11 +148,26 @@
     &__end{
       margin: pxToRem(54) auto;
       text-align: center;
-
+      
     }
     .active{
       display: flex;
     }
   }
+  
+  @media (max-width: 1000px) {
+    &__content{
+      &__cards{
+        grid-template-columns: auto;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    margin: pxToRem(48) 0;
+    &__content{
+      padding: 0 pxToRem(20);
+    }
 
+  }
 }

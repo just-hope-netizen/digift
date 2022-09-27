@@ -120,4 +120,22 @@
     color: #8a91a8;
     margin: 0 pxToRem(80) pxToRem(106);
   }
+  @media (max-width: 900px) {
+    &__top{
+      margin: 0 pxToRem(48)
+    }
+    &__bottom{
+      
+       margin: 0 pxToRem(48) pxToRem(30);
+     }
+     &__footnote{
+       margin: 0 pxToRem(48) pxToRem(106);
+      }
+    }
+    @media (max-width: 768px) {
+      &__top{
+
+        flex-direction: column;
+      }
+    }
 }

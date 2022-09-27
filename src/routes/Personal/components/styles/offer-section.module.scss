@@ -19,7 +19,7 @@
     color: #ffffff;
     width: 100%;
     padding: pxToRem(125) pxToRem(104);
-
+    
     h4 {
       font-size: pxToEm(64);
       font-weight: 700;
@@ -30,12 +30,38 @@
   }
   @media (max-width: 968px) {
     &__content{
+      padding: pxToRem(60) pxToRem(40);
       h4{
         width: 100%;
-        font-size: pxToEm(34);
+        
+      }
+      
+    }
+    
+  }
+  @media (max-width: 768px) {
+    &__content{
+      padding: pxToRem(100) pxToRem(40);
+      h4{
+        font-size: pxToEm(48);
         line-height: pxToRem(67);
 
       }
+    }
+  }
+  @media (max-width: 668px) {
+  margin: 0 pxToRem(40) pxToRem(103);
+
+    &__content{
+      padding: pxToRem(80) pxToRem(40);
+      
+    }
+  }
+  @media (max-width: 425px) {
+    margin: 0 0 pxToRem(40);
+    &__content{
+      padding: pxToRem(40) pxToRem(40);
+      
     }
   }
 }

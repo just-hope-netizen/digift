@@ -8,7 +8,7 @@ import {
   LinkedInIcon,
   ArrowRightIcon,
   PolygonIcon,
-} from "../../assets/svgs";
+} from "../../assets/svg";
 import styles from "./footer.module.scss";
 
 const Footer = () => {

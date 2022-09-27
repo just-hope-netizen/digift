@@ -1,7 +1,7 @@
 import { useState } from "react";
 import cx from "classnames";
 
-import { CheckIcon } from "../../assets/svgs";
+import { CheckIcon } from "../../assets/svg";
 import styles from "./checkbox.module.scss";
 
 const Checkbox = () => {

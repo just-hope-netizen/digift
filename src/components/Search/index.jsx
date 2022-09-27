@@ -1,9 +1,9 @@
-import { SearchIcon } from "../../assets/svgs";
+import { SearchIcon } from "../../assets/svg";
 import styles from "./search.module.scss";
 
-const SearchBar = () => {
+const SearchBar = ({className}) => {
   return (
-    <div className={styles.search}>
+    <div className={`${styles.search} ${className && className}`}>
       <SearchIcon />
       <input placeholder="Find cards anywhere" />
     </div>

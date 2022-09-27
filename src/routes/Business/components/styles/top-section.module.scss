@@ -1,12 +1,13 @@
-@import "../../../../styles/functions.scss";
+@import '../../../../styles/functions.scss';
 
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: pxToRem(220)  pxToRem(90) pxToRem(91);
+  padding: pxToRem(220) pxToRem(90) pxToRem(91);
 
   &__left {
+    margin-right: pxToRem(15);
     &__title {
       padding-top: pxToRem(20);
       h3 {
@@ -28,7 +29,8 @@
       letter-spacing: -0.02em;
       color: #8a91a8;
       margin: pxToRem(24) 0;
-      width: pxToRem(409);
+      max-width: pxToRem(409);
+      width: 100%;
     }
 
     &__btns {
@@ -61,7 +63,6 @@
         justify-content: center;
         color: #8a91a8;
 
-
         svg {
           margin-left: pxToRem(16);
           path {
@@ -77,5 +78,40 @@
     max-width: pxToRem(577);
     border-radius: pxToRem(4);
     align-self: stretch;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1250px) {
+    padding: pxToRem(120) pxToRem(44);
+    h3 {
+      font-size: pxToEm(30);
+      line-height: pxToRem(47);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__left {
+      text-align: center;
+      margin: auto;
+      &__btns {
+        justify-content: center;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+  @media (max-width: 425px) {
+    &__left {
+      &__btns {
+        flex-direction: column;
+        &__start {
+          margin: 0 0 pxToRem(10);
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    padding: pxToRem(120) 0 0 0;
   }
 }

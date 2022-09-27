@@ -1,4 +1,4 @@
-import { AmazonIcon, NotificationIcon, Chevron } from "../../assets/svgs";
+import { AmazonIcon, NotificationIcon, Chevron } from "../../assets/svg";
 import cx from "classnames";
 import styles from "./giftcard.module.scss";
 

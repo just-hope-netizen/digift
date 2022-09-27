@@ -1,5 +1,5 @@
 import BusinessTopImage from "../../../assets/images/business-top.png";
-import { TopStarIcon, ArrowRightIcon } from "../../../assets/svgs";
+import { TopStarIcon, ArrowRightIcon } from "../../../assets/svg";
 import RotatingText from "../../../components/RotatingText";
 import styles from "./styles/top-section.module.scss";
 

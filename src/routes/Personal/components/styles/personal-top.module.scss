@@ -1,4 +1,4 @@
-@import "../../../../styles/functions.scss";
+@import '../../../../styles/functions.scss';
 
 .top {
   margin-top: pxToRem(96);
@@ -68,26 +68,52 @@
     left: 0;
     bottom: pxToRem(24);
   }
-  @media (max-width: 768px) {
-    &__content{
-      height: inherit;
-      margin-top: pxToRem(160) ;
-      justify-content: flex-start;
+  
+  @media (max-width: 900px) {
+    padding: 0 pxToRem(10);
+    &__content {
       h3{
+        padding: 0 pxToRem(40) ;
+      }
+    }
+    
+    &__amazon, &__credit {
+    svg{
+      width: pxToRem(200)
+    }
+  }
+  }
+  @media (max-width: 768px) {
+    &__content {
+      height: inherit;
+      margin-top: pxToRem(160);
+      justify-content: flex-start;
+      h3 {
         width: 100%;
         font-size: pxToEm(44);
-      font-weight: 700;
-      line-height: pxToRem(67);
-      letter-spacing: -0.02em;
+        line-height: pxToRem(67);
       }
     }
-    &__credit, &__amazon{
-      svg{
+    &__credit,
+    &__amazon {
+      svg {
         width: pxToRem(140);
       }
-    // }
-    // {
-
     }
+  }
+  @media (max-width: 600px) {
+    &__content {
+      h3{
+        font-size: pxToEm(30);
+        line-height: pxToRem(47);
+
+      }p{
+        width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 425px) {
+  padding: 0;
   }
 }

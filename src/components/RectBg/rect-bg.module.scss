@@ -5,7 +5,7 @@
   position: relative;
   background: rgba(0, 105, 224, 1);
   border-radius: pxToRem(20);
-
+  
   img {
     width: 100%;
     height: pxToRem(682);
@@ -14,7 +14,7 @@
   &__content {
     position: absolute;
     top: 0;
-
+    
     height: pxToRem(682);
     border-radius: pxToRem(20);
     width: 100%;
@@ -22,4 +22,9 @@
     justify-content: center;
     align-items: center;
   }
-}
+  
+  @media (max-width: 600px) {
+    margin: pxToRem(50) 0;
+  }
+  
+  }

@@ -71,4 +71,20 @@
     border-bottom: 1px solid #ffffff;
     padding-bottom: pxToRem(4);
   }
+  
+  @media (max-width: 425px) {
+    padding:  0 ;
+    &__title{
+      h3{
+        font-size: pxToEm(54);
+        line-height: pxToRem(57);
+
+      }
+    }
+    &__sub{
+      p{
+        width: 100%;
+      }
+    }
+  }
 }

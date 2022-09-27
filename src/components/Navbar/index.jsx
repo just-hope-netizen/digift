@@ -15,8 +15,12 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <Logo />
-      <Menu onClick={toggleMenu} className={styles.menu}/>
-      <div className={`${styles.links__wrapper } ${menu && styles.links__wrapper__active}`}>
+      <Menu onClick={toggleMenu} className={styles.menu} toggle={menu} />
+      <div
+        className={`${styles.links__wrapper} ${
+          menu && styles.links__wrapper__active
+        }`}
+      >
         <div className={styles.nav__links}>
           <Link to='/' onClick={toggleMenu}>
             Personal <Chevron />
