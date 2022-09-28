@@ -165,9 +165,17 @@
   
   @media (max-width: 600px) {
     margin: pxToRem(48) 0;
+    
     &__content{
       padding: 0 pxToRem(20);
     }
-
+  }
+  @media (max-width: 480px) {
+    h3{
+      margin: 0;
+    }
+    &__content{
+      padding: 0 ;
+    }
   }
 }

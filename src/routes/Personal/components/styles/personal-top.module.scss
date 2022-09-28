@@ -114,6 +114,21 @@
   }
   
   @media (max-width: 425px) {
-  padding: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 320px) {
+    &__content {
+      h3{
+        line-height: pxToRem(37);
+  
+      }
+    }
+        &__credit,
+        &__amazon {
+          svg {
+            width: pxToRem(100);
+      }}
+    
   }
 }

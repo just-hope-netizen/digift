@@ -134,8 +134,14 @@
     }
     @media (max-width: 768px) {
       &__top{
-
+        
         flex-direction: column;
+      }
+    }
+    @media (max-width: 425px) {
+      &__top{
+
+        margin: 0;
       }
     }
 }

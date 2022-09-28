@@ -19,11 +19,11 @@
     height: pxToRem(224);
     margin-bottom: pxToRem(72);
   }
-
+  
   &__profile {
     display: flex;
     align-items: center;
-
+    
     &__avatar {
       height: pxToRem(48);
       width: pxToRem(48);
@@ -36,10 +36,10 @@
         left: 10%;
       }
     }
-
+    
     &__names {
       margin-left: pxToRem(16);
-
+      
       h5 {
         font-size: pxToEm(16);
         font-weight: 700;
@@ -58,4 +58,18 @@
       }
     }
   }
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: pxToRem(28) pxToRem(20);
+  }
+  @media (max-width: 375px) {
+
+    &__comment {
+      font-size: pxToEm(14);
+      line-height: pxToRem(28);
+     
+    }
+
+  }
 }
+
